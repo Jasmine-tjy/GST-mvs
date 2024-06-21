@@ -6,9 +6,12 @@ The code has been tested on Ubuntu 22.04 with i9 14900K/RTX4090, and you can mod
 
 * Cuda >= 6.0
 * OpenCV >= 2.4
-* cma090
+* cmake
 
 Besides make sure that your GPU Compute Capability matches the CMakeList.txt! Otherwise you can only get the empty result without any warnings. For example, according to GPU Compute Capability, RTX 4090's Compute Capability is 8.9. So you should set the cuda compilation parameter 'arch=compute_89,code=sm_89' or add a '-gencode arch=compute_89,code=sm_89'.
+
+Due to version matching issues among cuda, opencv, and cmake, the construction environment is quite complex. For this purpose, we have uploaded a __Docker image__ suitable for this model, which allows users to create an environment and directly run the software in the image to achieve 3D reconstruction. The available image can be found in [cmake_cuda_opencv](https://hub.docker.com/r/tangjas111/cmake_cuda_opencv/tags)
+
 
 ## Usage
 ### Complie GST-mvs
