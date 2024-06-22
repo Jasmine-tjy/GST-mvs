@@ -12,8 +12,22 @@ Besides make sure that your GPU Compute Capability matches the CMakeList.txt! Ot
 
 Due to version matching issues among cuda, opencv, and cmake, the construction environment is quite complex. For this purpose, we have uploaded a __Docker image__ suitable for this model, which allows users to create an environment and directly run the software in the image to achieve 3D reconstruction. The available image can be found in [cmake_cuda_opencv](https://hub.docker.com/r/tangjas111/cmake_cuda_opencv/tags)
 
-! The provided image is mainly for the code executing which is not for Python, you can prepare the dataset first by using personal python environment.
-
+__!__ The provided image is mainly for the code executing which is not for Python, you can prepare the dataset first by using personal python environment.
+### Tips of using docker
+* Login in your docker account first
+* Pull the docker image from docker hub
+  ```
+  docker pull tangjas111/cmake_cuda_opencv:latest
+  ```
+* Run docker container
+  ```
+  docker run -itd --name GST-test --runtime=nvidia --gpus all tangjas111/cmake_cuda_opencv:latest
+  ```
+* Copy the source code and preprocessed dataset into the container
+  ```
+  docker cp <dataset> <container id>:<work directory>
+  docker cp <source code> <container id>:<work directory>
+  ```
 ## Usage
 ### Complie GST-mvs
 ```
