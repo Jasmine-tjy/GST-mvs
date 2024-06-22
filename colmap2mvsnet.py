@@ -304,7 +304,7 @@ def calc_score(inputs, images, points3d, extrinsic, args):
 def processing_single_scene(args):
 
     image_dir = os.path.join(args.dense_folder, 'images')
-    model_dir = os.path.join(args.dense_folder, 'sparse')
+    model_dir = os.path.join(args.dense_folder, 'dslr_calibration_undistorted')
     cam_dir = os.path.join(args.save_folder, 'cams')
     image_converted_dir = os.path.join(args.save_folder, 'images')
 
