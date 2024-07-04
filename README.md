@@ -39,10 +39,11 @@ Download train and test dataset (style as xxx_dslr_undistorted.7z) from [ETH3D](
 ```
 python colmap2mvsnet.py --dense_folder <ETH3D data path, such as ./ETH3D/office> --save_folder <The path to save>
 ```
+To make our code testing easier, we provide a preprocessed dataset in the folder "__dataset_kicker__", which is one of the training datasets in ETH3D. This dataset can be used for simple testing.
 ### Run :arrow_left:
 After the code and dataset preparation, the code can be run as follows:
 ```
-./GST <ETH3D root path>/office
+./GST <ETH3D root path>/dataset_kicker
 ```
 It is very easy to use, and you can modify our code as you need.
 
