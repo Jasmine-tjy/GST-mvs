@@ -1,12 +1,23 @@
 # GST-mvs 
 GST-mvs is a 3D reconstruction framework based on multi-view stereo methd.
 
+## About :blush:
+This repository contains the code for Generalized Sampling of Non-Local Textural Clues Multi-View Stereo Framework. Our paper was accepted by ACM MM 2024, if you find our work useful in your research, please consider citing:
+  ```
+@inproceedings{Tang2024Generalized,
+  title={Generalized Sampling of Non-Local Textural Clues Multi-View Stereo Framework},
+  author={Tang, Jingyuan and Cai, Yangang and Gao, Xuesong and Sun, Songlin},
+  booktitle={Proceedings of the 32st ACM International Conference on Multimedia},
+  year={2024}
+}
+  ```
+
 ## Dependencies :hammer:
 The code has been tested on Ubuntu 22.04 with i9 14900K/RTX4090, and you can modify the CMakeList.txt to compile on Windows.
 
-* Cuda >= 6.0
-* OpenCV >= 2.4
-* cmake
+* [Cuda](https://developer.nvidia.cn/cuda-toolkit) >= 6.0
+* [OpenCV](https://opencv.org/) >= 2.4
+* [cmake](https://cmake.org/) >= 2.8
 
 Besides make sure that your GPU Compute Capability matches the CMakeList.txt! Otherwise you can only get the empty result without any warnings. For example, according to GPU Compute Capability, RTX 4090's Compute Capability is 8.9. So you should set the cuda compilation parameter 'arch=compute_89,code=sm_89' or add a '-gencode arch=compute_89,code=sm_89'.
 
@@ -49,3 +60,7 @@ It is very easy to use, and you can modify our code as you need.
 
 ## Demo Video :clapper:
 demo.mp4 is provided as a whole installation instruction.
+
+## Acknowledgements
+This code largely benefits from the following repositories: [ACMMP](https://github.com/GhiXu/ACMMP). Thanks to their authors for opening the source of their excellent works.
+
