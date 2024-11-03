@@ -4,11 +4,15 @@ GST-mvs is a 3D reconstruction framework based on multi-view stereo methd.
 ## About :blush:
 This repository contains the code for Generalized Sampling of Non-Local Textural Clues Multi-View Stereo Framework. Our paper was accepted by ACM MM 2024, if you find our work useful in your research, please consider citing:
   ```
-@inproceedings{Tang2024Generalized,
-  title={Generalized Sampling of Non-Local Textural Clues Multi-View Stereo Framework},
-  author={Tang, Jingyuan and Cai, Yangang and Gao, Xuesong and Sun, Songlin},
-  booktitle={Proceedings of the 32st ACM International Conference on Multimedia},
-  year={2024}
+@inproceedings{Tang_2024_Generalized,
+author = {Tang, Jingyuan and Cai, Yangang and Gao, Xuesong and Sun, Songlin},
+title = {Generalized Sampling of Non-Local Textural Clues Multi-View Stereo Framework},
+year = {2024},
+isbn = {9798400706868},
+url = {https://doi.org/10.1145/3664647.3685516},
+doi = {10.1145/3664647.3685516},
+pages = {11222–11225},
+series = {MM '24}
 }
   ```
 
